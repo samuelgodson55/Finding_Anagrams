@@ -6,10 +6,12 @@
 
 def find_anagram(word, anagram):
     # this sorts through the letters and compares
-    if (sorted(word) == sorted(anagram)):      
-        ans = True
+    if (sorted(word) == sorted(anagram)):
+        ans = True      
+        return True
     else:
         ans = False
+        return False
     print (ans)
 
 str1 = input("Put in the first word: ")
